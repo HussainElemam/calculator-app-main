@@ -1,5 +1,6 @@
 // Store the main themes in variables to use them later
 let themeOne = `
+const themeOne = `
 --main-background: hsl(222, 26%, 31%);
 --toggle-background: hsl(223, 31%, 20%);
 --keypad-background: hsl(223, 31%, 20%);
@@ -16,7 +17,7 @@ let themeOne = `
 --result-font-color: hsl(0, 0%, 100%);
 --equal-key-font-color: hsl(0, 0%, 100%);
 `;
-let themeTwo = `
+const themeTwo = `
 --main-background: hsl(0, 0%, 90%);
 --toggle-background: hsl(0, 5%, 81%);
 --keypad-background: hsl(0, 5%, 81%);
@@ -33,7 +34,7 @@ let themeTwo = `
 --result-font-color: hsl(60, 10%, 19%);
 --equal-key-font-color: hsl(0, 0%, 100%);
 `;
-let themeThree = `
+const themeThree = `
 --main-background: hsl(268, 75%, 9%);
 --toggle-background: hsl(268, 71%, 12%);
 --keypad-background: hsl(268, 71%, 12%);
@@ -51,7 +52,7 @@ let themeThree = `
 --equal-key-font-color: hsl(198, 20%, 13%);
 `;
 // #region Get elements
-const root = document.documentElement;
+let root = document.documentElement;
 const toggle = document.querySelector(".button-inner");
 const states = document.querySelectorAll(".place-holder");
 const result = document.querySelector(".result");
