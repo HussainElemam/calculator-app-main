@@ -1,5 +1,5 @@
 // Store the main themes in variables to use them later
-let themeOne = `
+const themeOne = `
 --main-background: hsl(222, 26%, 31%);
 --toggle-background: hsl(223, 31%, 20%);
 --keypad-background: hsl(223, 31%, 20%);
@@ -16,7 +16,7 @@ let themeOne = `
 --result-font-color: hsl(0, 0%, 100%);
 --equal-key-font-color: hsl(0, 0%, 100%);
 `;
-let themeTwo = `
+const themeTwo = `
 --main-background: hsl(0, 0%, 90%);
 --toggle-background: hsl(0, 5%, 81%);
 --keypad-background: hsl(0, 5%, 81%);
@@ -33,7 +33,7 @@ let themeTwo = `
 --result-font-color: hsl(60, 10%, 19%);
 --equal-key-font-color: hsl(0, 0%, 100%);
 `;
-let themeThree = `
+const themeThree = `
 --main-background: hsl(268, 75%, 9%);
 --toggle-background: hsl(268, 71%, 12%);
 --keypad-background: hsl(268, 71%, 12%);
@@ -62,7 +62,7 @@ const operationKeys = document.querySelectorAll(".operation");
 const deleteKey = document.querySelector(".del");
 const resetKey = document.querySelector(".reset");
 const equalKey = document.querySelector(".equal");
-const currentTheme = localStorage.theme;
+let currentTheme = localStorage.theme;
 // #endregion
 
 // #region check the localStorage for theme if no theme apply themeOne
@@ -103,8 +103,6 @@ states[2].addEventListener("click", () => {
 // #region calculator class to handle everything
 class Calculator {
   constructor() {
-    // this.firstOperand = firstOperand;
-    // this.secondOperand = secondOperand;
     this.firstOperand = "";
     this.secondOperand = "";
     this.operation = "";
