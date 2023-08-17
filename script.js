@@ -1,5 +1,5 @@
 // Store the main themes in variables to use them later
-const themeOne = `
+let themeOne = `
 --main-background: hsl(222, 26%, 31%);
 --toggle-background: hsl(223, 31%, 20%);
 --keypad-background: hsl(223, 31%, 20%);
@@ -16,7 +16,7 @@ const themeOne = `
 --result-font-color: hsl(0, 0%, 100%);
 --equal-key-font-color: hsl(0, 0%, 100%);
 `;
-const themeTwo = `
+let themeTwo = `
 --main-background: hsl(0, 0%, 90%);
 --toggle-background: hsl(0, 5%, 81%);
 --keypad-background: hsl(0, 5%, 81%);
@@ -33,7 +33,7 @@ const themeTwo = `
 --result-font-color: hsl(60, 10%, 19%);
 --equal-key-font-color: hsl(0, 0%, 100%);
 `;
-const themeThree = `
+let themeThree = `
 --main-background: hsl(268, 75%, 9%);
 --toggle-background: hsl(268, 71%, 12%);
 --keypad-background: hsl(268, 71%, 12%);
