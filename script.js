@@ -51,7 +51,7 @@ const themeThree = `
 --equal-key-font-color: hsl(198, 20%, 13%);
 `;
 // #region Get elements
-const root = document.documentElement;
+let root = document.documentElement;
 const toggle = document.querySelector(".button-inner");
 const states = document.querySelectorAll(".place-holder");
 const result = document.querySelector(".result");
