@@ -24,9 +24,9 @@ Users should be able to:
 
 ### Screenshot
 
-![theme one](images/theme_1.png.jpg)
-![theme two](images/theme_2.png.jpg)
-![theme three](images/theme_3.png.jpg)
+![theme one](images/theme_1.png)
+![theme two](images/theme_2.png)
+![theme three](images/theme_3.png)
 
 ### Links
 
